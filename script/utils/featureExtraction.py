@@ -1,3 +1,13 @@
+#!/usr/bin/env python
+
+"""
+    File name:          featuresExtruction.py
+    Author:             Guy Tevet
+    Date created:       9/6/2017
+    Date last modified: 9/6/2017
+    Description:        extructing features for each image from OVERFEAT CNN
+"""
+
 from subprocess import call
 import os
 EXE = " ../overfeat/bin/linux_64/overfeat "

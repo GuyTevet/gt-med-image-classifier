@@ -1,3 +1,13 @@
+#!/usr/bin/env python
+
+"""
+    File name:          binaryDataset.py
+    Author:             Guy Tevet
+    Date created:       9/6/2017
+    Date last modified: 9/6/2017
+    Description:        creating contour & binary datasets from raw dataset
+"""
+
 import numpy as np
 from scipy.ndimage import imread
 from scipy.misc import imresize , imsave , imshow

@@ -1,3 +1,14 @@
+#!/usr/bin/env python
+
+"""
+    File name:          smartCrop.py
+    Author:             Guy Tevet
+    Date created:       9/6/2017
+    Date last modified: 9/6/2017
+    Description:        xls utility functions for parsing and 
+                        editing experiments.xls
+"""
+
 from experimentDefines import *
 from openpyxl import Workbook , load_workbook
 from openpyxl.utils import get_column_letter
