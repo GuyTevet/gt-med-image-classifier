@@ -1,3 +1,13 @@
+#!/usr/bin/env python
+
+"""
+    File name:          smartCrop.py
+    Author:             Guy Tevet
+    Date created:       9/6/2017
+    Date last modified: 9/6/2017
+    Description:        smart_crop and no_crop alg.
+"""
+
 import numpy
 from scipy.ndimage import imread
 from scipy.misc import imresize , imsave , imshow

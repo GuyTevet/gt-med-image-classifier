@@ -1,3 +1,13 @@
+#!/usr/bin/env python
+
+"""
+    File name:          pca.py
+    Author:             Guy Tevet
+    Date created:       9/6/2017
+    Date last modified: 9/6/2017
+    Description:        using sklearn.decomposition.PCA
+"""
+
 import numpy as np
 from featureParsing import *
 from sklearn.decomposition import PCA , KernelPCA

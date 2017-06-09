@@ -1,3 +1,13 @@
+#!/usr/bin/env python
+
+"""
+    File name:          experimentInclude.py
+    Author:             Guy Tevet
+    Date created:       9/6/2017
+    Date last modified: 9/6/2017
+    Description:        All experiments imports
+"""
+
 ##EXPERIMENT INCLUDE
 from experimentDefines import *
 import os

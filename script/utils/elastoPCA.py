@@ -1,3 +1,15 @@
+#!/usr/bin/env python
+
+"""
+    File name:          elastoPCA.py
+    Author:             Guy Tevet
+    Date created:       9/6/2017
+    Date last modified: 9/6/2017
+    Description:        create PCA transform for reducing elasto images
+                        from 3D to 2D.
+                        creating comb detaset using 2D elasto images.
+"""
+
 import os
 import numpy as np
 import matplotlib.colors as colors
@@ -16,6 +28,7 @@ def createElastoTransformation(inputElastoDir,logFile,elastoDims = 2):
         for f in os.listdir(inputElastoDir): 
                 if(os.path.basename(f).find("Elasto") != -1):
                         elastoImg.append(colors.rgb_to_hsv(imread(os.path.join(inputElastoDir,f))))
+                        #elastoImg.append(imread(os.path.join(inputElastoDir,f)))
 
         datasetSize = len(elastoImg)
 
@@ -206,6 +219,11 @@ log = open("./utils/elastoPca.log","a")
 #createBmodeElastoCombinedDataset("../dataset/dataset","../dataset/dataset_comb_bmode_elasto_hsv_with_plot",log,"comb_bmode_elasto_hsv",True)
 #createBmodeElastoCombinedDataset("../dataset/dataset","../dataset/dataset_comb_bmode_elasto_hv",log,"comb_bmode_elasto_hv",False,1)
 #createBmodeElastoCombinedDataset("../dataset/dataset","../dataset/dataset_comb_bmode_binary_i02o08_elasto_hsv",log,"comb_bmode_binary_i02o08_elasto_hsv",False,1)
-createBmodeElastoCombinedDataset("../dataset/dataset","../dataset/dataset_comb_sorf_elasto_hsv",log,"comb_sorf_elasto_hsv",False,2)
+#createBmodeElastoCombinedDataset("../dataset/dataset","../dataset/dataset_comb_sorf_elasto_hsv",log,"comb_sorf_elasto_hsv",False,2)
+
+log = open("./utils/elastoPcaAtRGB.log","w")
+log.write("")
+log = open("./utils/elastoPcaAtRGB.log","a")
+createElastoTransformation("../dataset/dataset",log,elastoDims = 3)
 
 log.close()

@@ -1,3 +1,14 @@
+#!/usr/bin/env python
+
+"""
+    File name:          experiment.py
+    Author:             Guy Tevet
+    Date created:       9/6/2017
+    Date last modified: 9/6/2017
+    Description:        Experiment main class. holds all experiment configurations 
+                        and executing experiment using self.execute()
+"""
+
 ##EXPERIMENT
 from experimentInclude import *
 

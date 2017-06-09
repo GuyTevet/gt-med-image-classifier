@@ -1,3 +1,13 @@
+#!/usr/bin/env python
+
+"""
+    File name:          featuresParsing.py
+    Author:             Guy Tevet
+    Date created:       9/6/2017
+    Date last modified: 9/6/2017
+    Description:        parsing features files into floating point arrays
+"""
+
 import os
 import string
 

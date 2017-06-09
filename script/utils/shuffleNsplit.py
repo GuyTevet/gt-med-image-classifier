@@ -1,3 +1,14 @@
+#!/usr/bin/env python
+
+"""
+    File name:          shuffleNsplit.py
+    Author:             Guy Tevet
+    Date created:       9/6/2017
+    Date last modified: 9/6/2017
+    Description:        split and shuffle dataset data structures 
+                        for Experiment class
+"""
+
 from random import shuffle
 
 """

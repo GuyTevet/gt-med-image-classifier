@@ -1,3 +1,13 @@
+#!/usr/bin/env python
+
+"""
+    File name:          experimentDefines.py
+    Author:             Guy Tevet
+    Date created:       9/6/2017
+    Date last modified: 9/6/2017
+    Description:        All experiments constant prameters
+"""
+
 ##EXPERIMENT DEFINES
 DATASET_DIR = '../dataset'
 DATASET_SIGMENTATION_DIR = DATASET_DIR + '/dataset_sigmentation'

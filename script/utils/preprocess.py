@@ -1,3 +1,14 @@
+#!/usr/bin/env python
+
+"""
+    File name:          preprocess.py
+    Author:             Guy Tevet
+    Date created:       9/6/2017
+    Date last modified: 9/6/2017
+    Description:        create cropped datasets using
+                        smart_crop or no_crop
+"""
+
 import numpy
 from scipy.ndimage import imread
 from scipy.misc import imresize , imsave , imshow
