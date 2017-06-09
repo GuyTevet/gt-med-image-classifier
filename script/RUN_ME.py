@@ -1,3 +1,16 @@
+#!/usr/bin/env python
+
+"""
+    File name:          RUN_ME.py
+    Author:             Guy Tevet
+    Date created:       9/6/2017
+    Date last modified: 9/6/2017
+    Description:        running script:
+                        1.parsing all unexecuted experiments from experiments.xlsx
+                        2.instansing an Experiment class for each unexecuted experiment
+                        3.executing all experiments
+"""
+
 ##RUN SCRIPT
 from experiment import *
 
